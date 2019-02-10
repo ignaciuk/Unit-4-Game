@@ -1,5 +1,10 @@
 h1 {
-    font-family: 'Space Mono', monospace;
-    color: white;
+    font-family: 'Freckle Face' !important;
+    font-size: 4em !important;
 };
+
+h2, h3, li{
+    font-family: 'Chelsea Market' !important;
+}
+
 
