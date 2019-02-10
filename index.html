@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <title>Crystal Skull Collector</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <h1>Crystal Skull Collector</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <ul><h3>Instructions:</h3>
+                    <li>Goal: Make your Current Score match the Target Score without going over.</li>
+                    <li>The value of each Skull is hidden until you click it.</li>
+                    <li>Game will restart automatically.</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Target Score:</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><h2 id="target-score"></h2></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" >
+                    <div class="card-header">
+                        <h2>Current Score:</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><h2 id="current-score"></h2></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Games Played: <span id="games-played"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Wins: <span id="total-wins"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Losses: <span id="total-losses"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-3 d-flex align-items-center justify-content-center"><button id="red-crystal-skull-btn"><img src="assets/images/crystal-skull-square_red.jpg" height=150px></button></div>
+            <div class="col-3 d-flex align-items-center justify-content-center"><button id="blue-crystal-skull-btn"><img src="assets/images/crystal-skull-square_blue.jpg" height=150px></button></div>
+            <div class="col-3 d-flex align-items-center justify-content-center"><button id="green-crystal-skull-btn"><img src="assets/images/crystal-skull-square_green.jpg" height=150px></button></div>
+            <div class="col-3 d-flex align-items-center justify-content-center"><button id="magenta-crystal-skull-btn"><img src="assets/images/crystal-skull-square_magenta.jpg" height=150px></button></div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
