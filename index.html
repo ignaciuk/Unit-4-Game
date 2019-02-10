@@ -19,11 +19,15 @@
         <br>
         <div class="row">
             <div class="col-12 d-flex align-items-center justify-content-center">
-                <ul><h3>Instructions:</h3>
-                    <li>Goal: Make your Current Score match the Target Score without going over.</li>
-                    <li>The value of each Skull is hidden until you click it.</li>
-                    <li>Game will restart automatically.</li>
-                </ul>
+                <div class="card">
+                    <ul class="card-header"><h3>Instructions:</h3>
+                        <hr>
+                        <li>-Goal: Make your Current Score match the Target Score without going over.</li>
+                        <li>-Click the Skulls to increase your current score.</li>
+                        <li>-The value of each Skull is hidden until you click it.</li>
+                        <li>-Game will restart automatically.</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <br>
@@ -33,17 +37,17 @@
                     <div class="card-header">
                         <h2>Target Score:</h2>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush d-flex justify-content-between align-items-center">
                         <li class="list-group-item"><h2 id="target-score"></h2></li>
                     </ul>
                 </div>
             </div>
             <div class="col-4">
-                <div class="card" >
+                <div class="card">
                     <div class="card-header">
                         <h2>Current Score:</h2>
                     </div>
-                    <ul class="list-group list-group-flush">
+                    <ul class="list-group list-group-flush d-flex justify-content-between align-items-center">
                         <li class="list-group-item"><h2 id="current-score"></h2></li>
                     </ul>
                 </div>
@@ -72,6 +76,10 @@
     </div>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/sweetalert2/6.6.2/sweetalert2.min.js"></script> -->
     <script src="assets/javascript/game.js"></script>
 </body>
 </html>

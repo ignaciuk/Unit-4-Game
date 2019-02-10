@@ -1,10 +1,29 @@
-h1 {
-    font-family: 'Freckle Face' !important;
-    font-size: 4em !important;
-};
-
-h2, h3, li{
-    font-family: 'Chelsea Market' !important;
+body {
+    /* background-image: url(../images/jungle_pattern.png) !important; */
+    /* background-image: url(../images/jungle_pattern_black_white.png) !important; */
+    background-image: url(../images/jungle_pattern_edges_2.png) !important;
+    /* background-image: url(../images/jungle_pattern_posterized.png) !important; */
+    background-size: 10em;
 }
 
+h1 {
+    font-family: 'Freckle Face' !important;
+    color: white !important;
+    font-size: 5em !important;
+}
 
+.card, .list-group {
+    opacity: .75 !important;
+}
+
+button:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+h2, h3, li {
+    font-family: 'Chelsea Market' !important;
+    color: black;
+    opacity: 1 !important;
+}

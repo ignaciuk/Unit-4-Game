@@ -12,7 +12,6 @@ $(document).ready(function() {
     $("#total-losses").text(lossTotal);
     $("#games-played").text(gamesPlayed);
 
-
         function gameReStart() {
             currentScore = 0;
             $("#current-score").text(currentScore);
@@ -58,23 +57,33 @@ $(document).ready(function() {
                 checkScore();
             });
 
-
             function checkScore() {
                 if (currentScore === targetScore) {
-                    alert("Congratulations! You've won!");
+                    Swal.fire({
+                        title: "👏 Hooray! 👏",
+                        text: "Congratulations! You've won!",
+                        type: 'success',
+                        confirmButtonText: 'Play Again',
+                        allowOutsideClick: false,
+                      });
                     winTotal++;
                     $("#total-wins").text(winTotal);
                     gameReStart();
                 } else if (currentScore > targetScore) {
-                    alert("Sorry, you've lost");
+                    Swal.fire({
+                        title: "😞 Oh no! 😞",
+                        text: "Sorry, you've lost.",
+                        type: 'error',
+                        confirmButtonText: 'Try Again',
+                        allowOutsideClick: false,
+                      });
                     lossTotal++;
                     $("#total-losses").text(lossTotal);
                     gameReStart();
-                    }
+                }
             }
         }
 
     gameReStart();
-
 
 });
