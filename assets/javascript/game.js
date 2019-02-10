@@ -71,8 +71,8 @@ $(document).ready(function() {
                     gameReStart();
                 } else if (currentScore > targetScore) {
                     Swal.fire({
-                        title: "😞 Oh no! 😞",
-                        text: "Sorry, you've lost.",
+                        title: "😞 Oh no! You've gone over. 😞",
+                        text: "But I bet you've learned something.",
                         type: 'error',
                         confirmButtonText: 'Try Again',
                         allowOutsideClick: false,
