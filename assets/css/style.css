@@ -27,3 +27,7 @@ h2, h3, li {
     color: black;
     opacity: 1 !important;
 }
+
+#target-score, #current-score {
+    font-size: 36px;
+}
