@@ -1,7 +1,7 @@
 body {
-    /* background-image: url(../images/jungle_pattern.png) !important; */
+    background-image: url(../images/jungle_pattern.png) !important;
     /* background-image: url(../images/jungle_pattern_black_white.png) !important; */
-    background-image: url(../images/jungle_pattern_edges_2.png) !important;
+    /* background-image: url(../images/jungle_pattern_edges_2.png) !important; */
     /* background-image: url(../images/jungle_pattern_posterized.png) !important; */
     background-size: 10em;
 }
@@ -13,7 +13,7 @@ h1 {
 }
 
 .card, .list-group {
-    opacity: .75 !important;
+    opacity: .85 !important;
 }
 
 button:hover {

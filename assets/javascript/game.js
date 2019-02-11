@@ -33,7 +33,7 @@ $(document).ready(function() {
             buttonThreeValue = Math.floor(Math.random() * (12 - 1 + 1) + 1);
             buttonFourValue = Math.floor(Math.random() * (12 - 1 + 1) + 1);
 
-            $("#red-crystal-skull-btn").unbind().on("click", function() { 
+            $("#orange-crystal-skull-btn").unbind().on("click", function() { 
                 currentScore += buttonOneValue;
                 $("#current-score").text(currentScore);
                 checkScore();
@@ -51,7 +51,7 @@ $(document).ready(function() {
                 checkScore();
             });
 
-            $("#magenta-crystal-skull-btn").unbind().on("click", function() { 
+            $("#yellow-crystal-skull-btn").unbind().on("click", function() { 
                 currentScore += buttonFourValue;
                 $("#current-score").text(currentScore);
                 checkScore();
